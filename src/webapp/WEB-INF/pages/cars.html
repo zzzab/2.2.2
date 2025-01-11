@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cars</title>
+</head>
+<body>
+
+<th:block th:each="car : ${carList}">
+  <li th:text=" ' Модель: ' + ${car.model} + '; Страна: ' + ${car.country} + '; - Год: ' + ${car.year}"></li>
+</th:block>
+
+</body>
+</html>
